@@ -23,5 +23,6 @@ export let table = {
     tdSunset: document.querySelector("#tdSunset"),
     tdGeoCoords: document.querySelector("#tdGeoCoords"),
     realTime: null,
+    timeInterval: null,
 }
 

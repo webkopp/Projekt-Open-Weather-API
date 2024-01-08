@@ -27,8 +27,10 @@ const getWeatherData = (event) => {
     .catch((error) => console.log("Zeit ist um", error))
 }
 
+// let timeInterval
 const outputData = (data) => {
 
+    clearInterval(table.timeInterval)
     // console.log(data.name);
     variables.cityOutput.textContent = data.name;
     variables.outputCountry.textContent = data.sys.country
@@ -41,14 +43,22 @@ const outputData = (data) => {
     table.realTime = new Date(new Date(date).getTime() + data.timezone * 1000)// Ausgabe in Millisekunden
     console.log("London: ", date, "Berlin: ", table.realTime)
 
-    let timeInterval = setInterval(() => {
+    const timeDiff = new Date().getMonth
+
+    table.timeInterval = setInterval(() => {
 
         table.realTime = new Date (table.realTime + 1000).getTime()
 
         // console.log(table.realTime);
-        setTimeout(()=> {
+        // setTimeout(()=> {
+
+        if (timeDiff >= 4 && timeDiff <= 11) {
         table.tdLocalTime.textContent = 
-        new Date(table.realTime + data.timezone * 1000).toUTCString(), 1000 })
+        new Date(table.realTime + data.timezone * 1000 + 3600*1000).toUTCString() // , 1000 })
+        } else {
+            table.tdLocalTime.textContent = 
+        new Date(table.realTime + data.timezone * 1000 - 3600*1000).toUTCString()
+        }
         
     }, 1000)
 
