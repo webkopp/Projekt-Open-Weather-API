@@ -5,7 +5,7 @@ export let variables = {
     outputCountry: document.querySelector("#outputCountry"),
     divWeatherContainer: document.querySelector("#weatherContainer"),
     figureWeatherIcon: document.querySelector("#WeatherIcon"),
-    outputTemp: document.querySelector("outputTemp"),
+    outputTemp: document.querySelector("#outputTemp"),
     weatherCondition: document.querySelector("#weatherCondition")
 }
 

@@ -1,5 +1,7 @@
 import { variables, table } from "./variables.js";
 
+// Weather Icon https://openweathermap.org/img/wn/{WeatherCode}@2x.png
+
 // Arrow-Functions
 const getInputData = () => {
     let input = variables.cityInput.value
@@ -19,8 +21,28 @@ const getWeatherData = (event) => {
         console.log(data);
         const dataArr = Object.entries(data)
         console.log(dataArr);
+
+        outputData(data);
     })
     .catch((error) => console.log("Zeit ist um", error))
+}
+
+const outputData = (data) => {
+
+    // console.log(data.name);
+    variables.cityOutput.textContent = data.name;
+    variables.outputCountry.textContent = data.sys.country
+    variables.figureWeatherIcon.innerHTML = getWeatherIcon(data.weather[0].icon)
+    variables.outputTemp.textContent = data.main.temp.toString() + " °C";
+
+}
+
+const getWeatherIcon = (code) => {
+    let imageCode = code
+    console.log(imageCode);
+    let output = `<img src="https://openweathermap.org/img/wn/${imageCode}@2x.png" alt=""></img>`
+    console.log(output);
+    return output
 }
 
 
