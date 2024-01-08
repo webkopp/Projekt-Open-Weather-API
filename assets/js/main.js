@@ -64,6 +64,8 @@ const outputData = (data) => {
 
     table.tdWindSpeed.textContent = data.wind.speed
     table.tdCloudiness.textContent = data.clouds.all
+    table.tdPressure.textContent = data.main.pressure
+    table.tdHumidity.textContent = data.main.humidity
 
 }
 

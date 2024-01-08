@@ -24,7 +24,7 @@ main {
         @include displaySettings(flex, center, column, center);
         @include border(none, 16px);
         gap: 16px;
-        @include HW(80vh, 50vw);
+        @include HW("", 50vw);
         background-color: grey;
 
         input {
