@@ -21,6 +21,7 @@ export let table = {
     tdHumidity: document.querySelector("#tdHumidity"),
     tdSunrice: document.querySelector("#tdSunrice"),
     tdSunset: document.querySelector("#tdSunset"),
-    tdGeoCoords: document.querySelector("#tdGeoCoords")
+    tdGeoCoords: document.querySelector("#tdGeoCoords"),
+    realTime: null,
 }
 

@@ -37,11 +37,23 @@ const outputData = (data) => {
     variables.weatherCondition.textContent = data.weather[0].description
     
     // table
-    table.tdLocalTime.textContent = (() => {
-        const today = new Date()
-        console.log(today)
-    })
+    const date = new Date().toUTCString()
+    table.realTime = new Date(date + (data.timezone * 1000))// Ausgabe in Millisekunden
+    console.log("London: ", date, "Berlin: ", table.realTime)
+
+    let timeInterval = setInterval(() => {
+
+        table.realTime = new Date (table.realTime + 1000).getTime()
+
+        // console.log(table.realTime);
+        setTimeout(()=> {
+        table.tdLocalTime.textContent = 
+        new Date(table.realTime + data.timezone * 1000).toUTCString(), 1000 })
+        
+    }, 1000)
+
 }
+
 
 const getWeatherIcon = (code) => {
     let imageCode = code
@@ -50,9 +62,6 @@ const getWeatherIcon = (code) => {
     console.log(output);
     return output
 }
-
-
-
 
 
 // addEventListener
