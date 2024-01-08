@@ -1,4 +1,4 @@
-export const variables = {
+export let variables = {
     cityInput: document.querySelector("#cityInput"),
     button: document.querySelector("#buttonSubmit"),
     cityOutput: document.querySelector("#cityOutput"),
@@ -9,7 +9,7 @@ export const variables = {
     weatherCondition: document.querySelector("#weatherCondition")
 }
 
-export const table = {
+export let table = {
     trFirst: document.querySelector(".trFirst"),
     trSecond: document.querySelector(".trSecond"),
     tdFirst: document.querySelector(".tdFirst"),
