@@ -1,7 +1,7 @@
-*** Picsum-Fetch ***
+*** Open-Weather-API ***
 
 Beschreibung
-Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt. Es handelt sich um eine Galerie, für die man die API von Picsum verwendet.
+Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt. Es handelt sich um eine App, für die man die API von Picsum verwendet.
 
 <!-- Die Anwendung bietet folgende Möglichkeiten:
 - Bei der Movie Datenbank kann über ein Input-Feld und dem Button "Search" nach Filmen gesucht werden.
@@ -13,10 +13,10 @@ CSS3
 JavaScript
 
 GitHub Live-Vorschau
-Du findest eine Live Vorschau auf GitHub: https://webkopp.github.io/Projekt-Picsum-Fetch/
+Du findest eine Live Vorschau auf GitHub: https://webkopp.github.io/Projekt-Open-Weather-API/
 
 GitHub-Repository
-Du findest das gesamte Projekt auf GitHub: https://github.com/webkopp/Projekt-Picsum-Fetch
+Du findest das gesamte Projekt auf GitHub: https://github.com/webkopp/Projekt-Open-Weather-API
 
 Aufgaben
 - Für dieses Projekt verwendest du die API von Picsum, um eine Galerie zu erstellen.

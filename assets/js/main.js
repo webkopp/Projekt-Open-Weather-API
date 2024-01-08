@@ -15,7 +15,7 @@ const getWeatherData = (event) => {
     event.preventDefault();
     const inputCity = getInputData()
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=42f5e29cd071d8da84a05324881242eb&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=913cbe683511045af70e1d6ba1fc847deb&units=metric`)
     .then((res) => res.json())
     .then((data) => {
         console.log(data);
