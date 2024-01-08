@@ -11,43 +11,44 @@
 <body>
     <header></header>
     <main>
-       <form>
-        <input type="text" name="city" id="cityInput" onSubmit="getWeatherData()">
-        <button type="submit">Check Weather</button>
-        <section>
-            <h1>Weather in <span id="cityOutput"></span></h1>
-            <p id="outputCountry"></p>
-            <div id="weatherContainer">
-                <figure id="WeatherIcon"></figure>
-                <p id="outputTemp"></p>
-            </div>
-            <p id="weatherCondition"></p>
-        </section>
-        <table>
-            <tr class="trFirst">
-                <td class="tdFirst">Local Time</td>
-                <td class="tdFirst">WindSpeed</td>
-                <td class="tdFirst">Cloudiness</td>
-                <td class="tdFirst">Pressure</td>
-                <td class="tdFirst">Humidity</td>
-                <td class="tdFirst">Sunrice</td>
-                <td class="tdFirst">Sunset</td>
-                <td class="tdFirst">Geo Coords</td>
-            </tr>
-            <tr class="trSecond"><td class="tdSecond" id="tdLocalTime"></td>
-                <td class="tdSecond" id="tdWindSpeed"></td>
-                <td class="tdSecond" id="tdCloudiness"></td>
-                <td class="tdSecond" id="tdPressure"></td>
-                <td class="tdSecond" id="tdHumidity"></td>
-                <td class="tdSecond" id="tdSunrice"></td>
-                <td class="tdSecond" id="tdSunset"></td>
-                <td class="tdSecond" id="tdGeoCoords"></td>
-            </tr>
-        </table>
-       </form>
+        <form>
+            <input type="text" name="city" id="cityInput">
+            <button type="submit" id="buttonSubmit">Check Weather</button>
+            <section>
+                <h1>Weather in <span id="cityOutput"></span></h1>
+                <p id="outputCountry"></p>
+                <div id="weatherContainer">
+                    <figure id="WeatherIcon"></figure>
+                    <p id="outputTemp"></p>
+                </div>
+                <p id="weatherCondition"></p>
+            </section>
+            <table>
+                <tr class="trFirst">
+                    <td class="tdFirst">Local Time</td>
+                    <td class="tdFirst">WindSpeed</td>
+                    <td class="tdFirst">Cloudiness</td>
+                    <td class="tdFirst">Pressure</td>
+                    <td class="tdFirst">Humidity</td>
+                    <td class="tdFirst">Sunrice</td>
+                    <td class="tdFirst">Sunset</td>
+                    <td class="tdFirst">Geo Coords</td>
+                </tr>
+                <tr class="trSecond">
+                    <td class="tdSecond" id="tdLocalTime"></td>
+                    <td class="tdSecond" id="tdWindSpeed"></td>
+                    <td class="tdSecond" id="tdCloudiness"></td>
+                    <td class="tdSecond" id="tdPressure"></td>
+                    <td class="tdSecond" id="tdHumidity"></td>
+                    <td class="tdSecond" id="tdSunrice"></td>
+                    <td class="tdSecond" id="tdSunset"></td>
+                    <td class="tdSecond" id="tdGeoCoords"></td>
+                </tr>
+            </table>
+        </form>
     </main>
     <footer></footer>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
 </body>
 
 </html>
