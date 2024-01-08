@@ -1,11 +1,11 @@
 *** Open-Weather-API ***
 
 Beschreibung
-Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt. Es handelt sich um eine App, für die man die API von Picsum verwendet.
+Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.de erstellt. Es handelt sich um eine App, für die man die Open Weather API von OpenWeather verwendet um die aktuellen Wetterdaten zu präsentieren.
 
-<!-- Die Anwendung bietet folgende Möglichkeiten:
-- Bei der Movie Datenbank kann über ein Input-Feld und dem Button "Search" nach Filmen gesucht werden.
-- Die User:innen können über die Button "Titel Up" und "Titel Down" die Filme nach Namen sortieren und über den Button "Best Rate" nach Filmen mit Top-Bewertung filtern. -->
+Die Anwendung bietet folgende Möglichkeiten:
+- Das Input-Feld bietet die Möglichkeit einen Ort der Wahl einzugeben.
+- Über den Submit-Button "Check Weather" werden da zu dem vorher gewähltem Ort alle aktuellen Angaben über Zeit und Wetter ausgegeben.
 
 Werkzeuge/Technologien
 HTML5
@@ -19,18 +19,8 @@ GitHub-Repository
 Du findest das gesamte Projekt auf GitHub: https://github.com/webkopp/Projekt-Open-Weather-API
 
 Aufgaben
-- Für dieses Projekt verwendest du die API von Picsum, um eine Galerie zu erstellen.
-- Diese beiden Links sind wichtig für die Umsetzung, schau sie dir an:
-    - [picsum](https://picsum.photos/)
-    - [picsum list](https://picsum.photos/v2/list/)
-
-Phase I:
-Nutze die https://picsum.photos/v2/list und lass dir die Liste in der Console ausgeben.
-
-Phase II:
-Da du dir die Daten jetzt schon in der Konsole ausgeben lassen kannst, darfst du als nächstes für jeden Datensatz eine Kombination aus Bild und Autor:in in ein figure-Element wrappen und in deinem HTML ausgeben lassen.
-Die Elemente in deinem HTML sollten dann so aussehen: 
-https://uploads-ssl.webflow.com/62d9141584e7b750edcafa6a/64ba8f8b4b0c2ac2a4874331_API-fetch-level-2_1-example.png
-
-✨ Bonus
-- Schaue dir den Parameter "?page" an und überlege, wie du ihn einsetzen könntest.
+- Für dieses Projekt verwendest du die Open Weather API, um eine App mit aktuellen Wetter-Daten zu erstellen.
+- [Hier](https://openweathermap.org/guide) der Link zur API.
+- Um diese API nutzen zu können und einen API-Key zu erhalten, musst du dich registrieren.
+- Nachdem du die Daten von der API erhalten hast, kannst du sie verwenden, um das Wetter in einem ansprechenden Design anzuzeigen.
+- Bei Design und Funktion deiner App kannst du selbst entscheiden.
