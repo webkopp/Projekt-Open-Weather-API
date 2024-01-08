@@ -38,7 +38,7 @@ const outputData = (data) => {
     
     // table
     const date = new Date().toUTCString()
-    table.realTime = new Date(date + (data.timezone * 1000))// Ausgabe in Millisekunden
+    table.realTime = new Date(new Date(date).getTime() + data.timezone * 1000)// Ausgabe in Millisekunden
     console.log("London: ", date, "Berlin: ", table.realTime)
 
     let timeInterval = setInterval(() => {
