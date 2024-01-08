@@ -34,7 +34,7 @@ const outputData = (data) => {
     variables.outputCountry.textContent = data.sys.country
     variables.figureWeatherIcon.innerHTML = getWeatherIcon(data.weather[0].icon)
     variables.outputTemp.textContent = data.main.temp.toString() + " °C";
-
+    variables.weatherCondition.textContent = data.weather[0].description
 }
 
 const getWeatherIcon = (code) => {
