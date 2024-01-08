@@ -62,6 +62,9 @@ const outputData = (data) => {
         
     }, 1000)
 
+    table.tdWindSpeed.textContent = data.wind.speed
+    table.tdCloudiness.textContent = data.clouds.all
+
 }
 
 
