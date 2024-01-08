@@ -1,0 +1,68 @@
+@mixin displaySettings($display, $justify, $direction, $items) {
+    display: $display;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $items;
+}
+
+@mixin border($border, $radius,) {
+    border: $border;
+    border-radius: $radius
+}
+
+@mixin HW($height, $width) {
+    height: $height;
+    width: $width
+}
+
+
+
+main {
+    @include displaySettings(flex, center, column, center);
+
+    form {
+        @include displaySettings(flex, center, column, center);
+        @include border(none, 16px);
+        gap: 16px;
+        @include HW(80vh, 50vw);
+        background-color: grey;
+
+        input {
+            @include HW("", 60%);
+            @include border(none, 8px);
+            padding: 8px 16px;
+            box-shadow: 0 0 8px 0 white;
+        }
+
+        #buttonSubmit {
+            @include border(none, 8px);
+            padding: 8px 16px;
+            &:hover {
+                font-size: 150%;
+                box-shadow: inset 0 0 8px 4px orange;
+            }
+        }
+
+        section {
+            @include displaySettings(flex, center, column , center );
+            div {
+                @include displaySettings(flex, row ,center ,center );
+                @include border(none, 16px);
+                @include HW(auto, auto);
+                box-shadow: inset 0 0 16px orange, 0 0 16px 0 white;
+                padding: 0 32px;
+            }
+        }
+
+        table {
+            @include HW("", 100%);
+
+            .tdFirst, .tdSecond {
+                @include HW("", 50%);
+                border: 1px solid black;
+                text-align: center;
+            }
+            
+        }
+    }
+}

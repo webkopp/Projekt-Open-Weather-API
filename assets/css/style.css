@@ -1,5 +1,65 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+main form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  gap: 16px;
+  height: 80vh;
+  width: 50vw;
+  background-color: grey;
+}
+main form input {
+  height: "";
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: 0 0 8px 0 white;
+}
+main form #buttonSubmit {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+main form #buttonSubmit:hover {
+  font-size: 150%;
+  box-shadow: inset 0 0 8px 4px orange;
+}
+main form section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main form section div {
+  display: flex;
+  justify-content: row;
+  flex-direction: center;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  height: auto;
+  width: auto;
+  box-shadow: inset 0 0 16px orange, 0 0 16px 0 white;
+  padding: 0 32px;
+}
+main form table {
+  height: "";
+  width: 100%;
+}
+main form table .tdFirst, main form table .tdSecond {
+  height: "";
+  width: 50%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
