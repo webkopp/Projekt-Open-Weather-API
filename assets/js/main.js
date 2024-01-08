@@ -35,6 +35,12 @@ const outputData = (data) => {
     variables.figureWeatherIcon.innerHTML = getWeatherIcon(data.weather[0].icon)
     variables.outputTemp.textContent = data.main.temp.toString() + " °C";
     variables.weatherCondition.textContent = data.weather[0].description
+    
+    // table
+    table.tdLocalTime.textContent = (() => {
+        const today = new Date()
+        console.log(today)
+    })
 }
 
 const getWeatherIcon = (code) => {
@@ -51,3 +57,5 @@ const getWeatherIcon = (code) => {
 
 // addEventListener
 variables.button.addEventListener("click", getWeatherData)
+
+
